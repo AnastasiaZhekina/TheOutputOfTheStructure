@@ -10,7 +10,7 @@ struct address {
     int apartment;
     int index;
 };
-void foo(struct address adss);
+void foo( address adss);
 
 int main()
 {
@@ -25,7 +25,7 @@ int main()
     foo(adss);
 }
 
-void foo(struct address adss) {
+void foo(address adss) {
     cout << "Город: " << adss.city << endl <<
         "Улица: " << adss.street << endl <<
         "Номер дома: " << adss.house << endl <<
